@@ -12,7 +12,7 @@ Your API should support three requests types 1) A request for all data, 2) A req
 GET http://localhost:1337/movies
 
 Response
-
+```
 [{
   title: "12 Angry Men",
   directors: ["Sidney Lumet"],
@@ -23,13 +23,13 @@ Response
 },
 ... all other movies
 ]
-
+```
 #### Get By Title
 
 GET http://localhost:1337/movies/lord
 
 Response
-
+```
 [{
   title: "The Lord Of The Rings: The Fellowship Of The Ring",
   directors: ["Peter Jackson"],
@@ -38,13 +38,13 @@ Response
   runTime: "178 mins",
   genres: ["Adventure", "Drama", "Fantasy"],
 }]
-
+```
 #### Get By Director
 
 GET http://localhost:1337/movies/darabont
 
 Response
-
+```
 [{
   title: "The Shawshank Redemption",
   directors: ["Frank Darabont"],
@@ -53,13 +53,13 @@ Response
   runTime: "142 mins",
   genres: ["Drama"],
 }]
-
+```
 #### Create New
 
 POST http://localhost:1337/movies/create
 
 Body
-
+```
 {
   title: "Cabin in the Woods",
   directors: ["Drew Goddard"],
@@ -68,8 +68,9 @@ Body
   runTime: "95 mins",
   genres: ["Horror"],
 }
+```
 Response
-
+```
 {
   title: "Cabin in the Woods",
   directors: ["Drew Goddard"],
@@ -78,3 +79,4 @@ Response
   runTime: "95 mins",
   genres: ["Horror"],
 }
+```
